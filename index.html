@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting-game</title>
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="sounds\alex-productions-medieval-and-celtic-music-lands(chosic.com).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+    <form id="playerForm">
+        <div id="playerInfo">
+            <input type="text" id="playerName" placeholder="Skriv ditt namn" required>
+        </div>
+        <button type="submit" id="knappen">Välj Mage</button>
+    </form>
+    <form id="playerForm2">
+        <div id="playerInfo2">
+            <input type="text" id="playerName2" placeholder="Skriv ditt namn" required>
+        </div>
+        <button type="submit" id="knappen2">Välj Warrior</button>
+      </form>
+    <div id="container">
+        <div class="playerbar" id="pb1">
+            <h2 id="rubrik"></h2>
+            <div id="healthbar1">
+                <span></span>
+            </div>
+            <div class="img-container">
+                <img src="images\dfqfr58-d70fa4c6-be08-418c-9510-b2adbc3ca2eb.jpg" alt="">
+            </div>
+            <div class="player-btn">
+                <button id="avoid">avoid</button>
+                <button id="fireball">fireball</button>
+                <button id="staffhit">staffhit</button>
+            </div>
+        </div>
+        <div id="texx">
+            <span></span>
+        </div>
+        <div class="playerbar" id="pb2">
+            <h2 id="rubrik2"></h2>
+            <div id="healthbar2">
+                <span></span>
+            </div>
+            <div class="img-container">
+                <img src="images\warrior_by_sylvester0102_dfrw5pv-414w-2x.jpg" alt="">
+            </div>
+            <div class="player-btn">
+                <button id="shield">shield</button>
+                <button id="swordslash">swordslash</button>
+                <button id="shieldbash">shieldbash</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
