@@ -273,4 +273,4 @@ reloadButton.addEventListener('click', function() {
     location.reload();
 });
 
-export { magePlayer, warriorPlayer };
+export { magePlayer, warriorPlayer, namn, namn2 };

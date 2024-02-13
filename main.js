@@ -1,4 +1,4 @@
-import { warriorPlayer, magePlayer } from './modules/players.js';
+import { warriorPlayer, magePlayer, namn, namn2 } from './modules/players.js';
 
 document.getElementById('fireball').addEventListener('click', () => {
     magePlayer.fireball();
@@ -24,17 +24,14 @@ document.getElementById('fireball').addEventListener('click', () => {
     warriorPlayer.shield();
   });
   
-  document.addEventListener('DOMContentLoaded', function (error) {
+  const music = document.body.querySelector('audio');
 
-    const promise = document.querySelector('audio').play();
-  
-    if (promise !== undefined) {
-        promise.catch(error => {
-            console.log ("Auto-play failed")
-        }).then(() => {
-            console.log ("Auto-play started")
-        });
-    }
-  });
-  
+  function startMusic (){
+    setTimeout(() => {
+      music.play();
+    }, 1000);
+  }
+
+namn.addEventListener('click', startMusic);
+namn2.addEventListener('click', startMusic);
   
