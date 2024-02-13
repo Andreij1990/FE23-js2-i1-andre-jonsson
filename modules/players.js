@@ -98,6 +98,7 @@ function checkAndHideForm() {
     playerForm.style.display = 'none';
     playerForm2.style.display = 'none';
     container.style.display = 'flex';
+    alert('Tangenter:\nMage: Avoid = "a", Fireball = "s", Staffhit = "d"\nWarrior: Shield = "4", Swordslash = "5", Shieldbash = "6"\nLjud på/av = "ctrl + m", Hjälp = "h"');
   }
 }
 
