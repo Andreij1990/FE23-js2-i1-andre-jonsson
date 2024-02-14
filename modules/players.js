@@ -253,6 +253,12 @@ function death (){
   swordslashBtn.disabled = true;
   shieldbashBtn.disabled = true;
 
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        reloadButton.click();
+    }
+  });
+
   if (warriorPlayer.health <= 0){
     texx.innerText = `${namn.value} the Mage vann fighten!`;
     delaySound(mageLine, mageCelebration);
@@ -279,7 +285,6 @@ function turn (button){
 function nextTurn (button){
   button.disabled = true;
 }
-
 
 reloadButton.addEventListener('click', function() {
     location.reload();
