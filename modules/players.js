@@ -93,11 +93,22 @@ knappen2.addEventListener('click', addName2);
 
 const container = document.getElementById('container');
 
+function whoStarts() {
+  const outFirst = Math.random();
+
+  if (outFirst < 0.5) {
+      warriorPlayer.notYou();
+  } else {
+      magePlayer.notYou();
+  }
+}
+
 function checkAndHideForm() {
   if (knapp1Tryckt && knapp2Tryckt) {
     playerForm.style.display = 'none';
     playerForm2.style.display = 'none';
     container.style.display = 'flex';
+    whoStarts();
     alert('Tangenter:\nMage: Avoid = "a", Fireball = "s", Staffhit = "d"\nWarrior: Shield = "4", Swordslash = "5", Shieldbash = "6"\nLjud på/av = "ctrl + m", Hjälp = "h"');
   }
 }
